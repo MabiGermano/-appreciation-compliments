@@ -10,7 +10,7 @@ interface UserRequest {
 }
 
 class CreateUserService {
-  async execute({ name, email, admin, password }: UserRequest) {
+  async execute({ name, email, admin = false, password }: UserRequest) {
     const usersRepository = getCustomRepository(UserRepository);
 
     if (!email) {
@@ -28,16 +28,16 @@ class CreateUserService {
     const passwordHash = await hash(password, 8);
 
     const user = usersRepository.create(
-      { 
-        name, 
-        email, 
-        admin, 
+      {
+        name,
+        email,
+        admin,
         password: passwordHash
       });
 
-      await usersRepository.save(user);
+    await usersRepository.save(user);
 
-      return user;
+    return user;
   }
 }
 
