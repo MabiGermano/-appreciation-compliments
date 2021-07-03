@@ -40,4 +40,5 @@
 #landing-page .card-login span {
   font-weight: 700;
   text-align: center;
+  display: block;
 }
