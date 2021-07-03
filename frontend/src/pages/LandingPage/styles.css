@@ -17,55 +17,27 @@
 }
 
 #landing-page .card-login {
-  padding:1rem;
+  padding: 1rem;
   display: flex;
   justify-content: center;
   flex-direction: column;
+  width: 75%;
 }
 
 #landing-page .input-group {
   margin-bottom: 1.5rem;
 }
 
+#landing-page .input-group input {
+  height: 1.8rem;
+}
+
 #landing-page .btn {
   width: 100%;
-  margin-top: 3rem;
+  margin: 1.5rem 0 1.5rem 0;
 }
 
-
-/* move it from here */
-.card {
-  padding: 0.5rem;
-  height: 100%;
-
-  background-color: var(--primary-card);
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.1);
-  border-radius: 30px;
-}
-
-
-/* move it from here */
-.input-group label {
-  display: block;
-  margin-bottom: 0.3rem;
-}
-.input-group input {
-  border-radius: 5px;
-  border: 1px solid #b8b8b8;
+#landing-page .card-login span {
   font-weight: 700;
-}
-
-.btn {
-  border-radius: 5px;
-  background-color: var(--primary-color);
-  color: white;
-  font-weight: 700;
-  border: 1px solid #b8b8b8;
-  padding: 0.5rem;
-
-  transition: background-color 0.2s;
-}
-
-.btn:hover {
-  background-color: var(--button-hover-color);
+  text-align: center;
 }

@@ -1,6 +1,9 @@
 import React from 'react';
 import firstPageImg from '../../assets/images/firstPage.svg';
+import { Link } from 'react-router-dom';
+
 import Input from '../../components/Input';
+import Card from '../../components/Card';
 
 import './styles.css'
 
@@ -12,14 +15,32 @@ function Landing() {
         <img src={firstPageImg} alt="man and woman holding a congrats badge" />
       </div>
       <div>
-        <div className="card card-login">
-          <Input name="email" label="Email" />
-          <Input name="password" label="Password" type="password" />
+        <Card classes="card-login">
+          <form action="">
+            <Input
+              name="email"
+              label="Email" />
 
-          <button className="btn">
-            Login
-          </button>
-        </div>
+            <Input
+              name="password"
+              label="Password"
+              type="password" />
+
+            <button className="btn btn-primary">
+              Login
+            </button>
+
+            <span>
+              OR
+            </span>
+
+            <Link
+              to="/register"
+              className="btn btn-secondary">
+              Register
+            </Link>
+          </form>
+        </Card>
       </div>
     </main>
   );

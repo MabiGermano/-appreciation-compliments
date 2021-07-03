@@ -1,0 +1,35 @@
+#user-form-page {
+  width: 100%;
+  padding: 2rem 4rem 2rem 4rem;
+  display: grid;
+  grid-template-columns: 2fr 10fr;
+}
+
+#user-form-page header h1{
+  margin-top: 1.2rem;
+}
+
+#user-form-page>div {
+  position: relative;
+  top: 13%;
+}
+
+#user-form-page form .btn {
+  width: 100%;
+}
+
+#user-form-page .input-group input {
+  height: 1.8rem;
+}
+
+#user-form-page .input-group {
+  margin-bottom: 2.4rem;
+}
+
+#user-form-page .btn {
+  margin-top: 4rem;
+}
+
+#user-form-page .card {
+  padding: 2rem;
+}
