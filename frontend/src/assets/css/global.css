@@ -1,0 +1,27 @@
+:root {
+  font-size: 1.4rem;
+  --primary-color: #FF725E;
+  --complementary-color: #0738B7;
+  --primary-card: #C2C2C2;
+  --secondary-card: #033148;
+  --button-hover-color: #da6f61;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  width: 100vw;
+  height: 100vh;
+  font-family: 'Sansation', Arial, Helvetica, sans-serif;
+  color: var(--complementary-color);
+}
+
+input,
+button {
+  font-size: 1.4rem;
+}
