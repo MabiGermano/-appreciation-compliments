@@ -23,7 +23,8 @@ body {
 }
 
 input,
-.btn {
+.btn,
+select {
   font-size: 1rem;
 }
 

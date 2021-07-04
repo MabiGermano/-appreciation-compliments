@@ -1,0 +1,21 @@
+.input-group label {
+  display: block;
+  margin-bottom: 0.3rem;
+  font-weight: 700;
+}
+
+.input-group select {
+  width: 100%;
+  margin-top: 0.8rem;
+  outline: 0;
+  font: 'Sansation';
+  
+  border-radius: 5px;
+  border: 1px solid #b8b8b8;
+  
+  -webkit-appearance: none;
+  appearance: none;
+  background: url(http://cdn1.iconfinder.com/data/icons/cc_mono_icon_set/blacks/16x16/br_down.png) no-repeat right #fff;
+  padding: 0.3rem 0.5rem;
+  background-position-x: 98%;
+}

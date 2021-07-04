@@ -2,7 +2,8 @@ import React from 'react';
 import { MdKeyboardBackspace } from 'react-icons/md';
 import { Link } from 'react-router-dom';
 
-import Input from '../../components/Input';
+import Select from '../../components/Select';
+import Textarea from '../../components/Textarea';
 import Card from '../../components/Card';
 
 import sendGiftImg from '../../assets/images/send_compliment.svg';
@@ -26,20 +27,31 @@ export default function ComplimentForm() {
         </div>
       </header>
       <div>
-      <Card classes="card-form">
+        <Card classes="card-form">
           <form action="">
-            <Input
-              name="name"
-              label="Name" />
+            <Select
+              name="to"
+              label="TO"
+              options={[
+                { value: '0', label: 'Mabi' },
+                { value: '1', label: 'Jacque' },
+                { value: '2', label: 'Stitch' }
+              ]}
+            />
 
-            <Input
-              name="email"
-              label="Email" />
-
-            <Input
-              name="password"
-              label="Password"
-              type="password" />
+            <Select
+              name="tag"
+              label="Tag"
+              options={[
+                { value: '0', label: '#Leadership' },
+                { value: '1', label: '#GoodJob' },
+                { value: '2', label: '#Congrats' }
+              ]}
+            />
+            <Textarea
+              name="message"
+              label="Message"
+              rows={10} />
 
             <Link
               to="#"

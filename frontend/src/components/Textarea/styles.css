@@ -1,0 +1,12 @@
+.input-group label {
+  display: block;
+  margin-bottom: 0.3rem;
+  font-weight: 700;
+}
+
+.input-group textarea {
+  width: 100%;
+  resize: none;
+  border-radius: 5px;
+  border: 1px solid #b8b8b8;
+}
