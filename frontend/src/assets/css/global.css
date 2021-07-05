@@ -16,15 +16,14 @@
 
 html,
 body {
-  width: 100vw;
-  height: 100vh;
   font-family: 'Sansation', Arial, Helvetica, sans-serif;
   color: var(--complementary-color);
 }
 
 input,
 .btn,
-select {
+select,
+textarea {
   font-size: 1rem;
 }
 

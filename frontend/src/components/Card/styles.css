@@ -11,3 +11,19 @@
 .card .input-group {
   margin-bottom: 2.4rem;
 }
+
+.card.card-secondary {
+  color: white;
+  background-color: var(--secondary-card);
+}
+
+.card q {
+  display: block;
+}
+
+.card h4,
+.card span,
+.card q,
+.card p {
+  margin: 1rem 0;
+}

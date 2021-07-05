@@ -6,7 +6,12 @@
 
 .input-group textarea {
   width: 100%;
+  padding: 0.5rem;
   resize: none;
   border-radius: 5px;
   border: 1px solid #b8b8b8;
+  outline: none;
+
+  font-family: 'Sansation', Arial, Helvetica, sans-serif;
 }
+

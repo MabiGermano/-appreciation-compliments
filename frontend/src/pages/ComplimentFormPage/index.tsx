@@ -15,7 +15,7 @@ export default function ComplimentForm() {
     <main id="compliment-form-page">
       <header>
         <div>
-          <Link to="/">
+          <Link to="/home">
             <MdKeyboardBackspace className="icon back-icon" />
           </Link>
           <h1>
