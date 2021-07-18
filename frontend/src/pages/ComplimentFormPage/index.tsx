@@ -52,12 +52,13 @@ export default function ComplimentForm() {
               name="message"
               label="Message"
               rows={10} />
-
-            <Link
-              to="#"
-              className="btn btn-primary">
-              Save
-            </Link>
+            <footer>
+              <Link
+                to="#"
+                className="btn btn-primary">
+                Save
+              </Link>
+            </footer>
           </form>
         </Card>
       </div>

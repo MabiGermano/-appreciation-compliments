@@ -25,20 +25,21 @@ function Landing() {
               name="password"
               label="Password"
               type="password" />
+            <footer>
+              <button className="btn btn-primary">
+                Login
+              </button>
 
-            <button className="btn btn-primary">
-              Login
-            </button>
+              <span>
+                OR
+              </span>
 
-            <span>
-              OR
-            </span>
-
-            <Link
-              to="/register"
-              className="btn btn-secondary">
-              Register
-            </Link>
+              <Link
+                to="/register"
+                className="btn btn-secondary">
+                Register
+              </Link>
+            </footer>
           </form>
         </Card>
       </div>

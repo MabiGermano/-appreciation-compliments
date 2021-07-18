@@ -1,13 +1,33 @@
-import React from 'react';
+import React, { FormEvent } from 'react';
+import { useState } from 'react';
 import { MdKeyboardBackspace } from 'react-icons/md';
-import { Link } from 'react-router-dom';
+import { Link, useHistory } from 'react-router-dom';
 
 import Card from '../../components/Card';
 import Input from '../../components/Input';
+import api from '../../services/Api';
 
 import './styles.css';
 
 export default function UserForm() {
+  const history = useHistory();
+  const [name, setName] = useState('');
+  const [email, setEmail] = useState('');
+  const [password, setPassword] = useState('');
+  const [confirmPassword, setConfirmPassword] = useState('');
+
+  async function handleSubmit(event: FormEvent) {
+    event.preventDefault();
+    const newUser = {
+      name,
+      email,
+      password
+    }
+    await api.post('users', newUser);
+    alert("User created successfully!");
+    history.push('/');
+  }
+
   return (
     <main id="user-form-page">
       <header>
@@ -23,27 +43,35 @@ export default function UserForm() {
           <form action="">
             <Input
               name="name"
-              label="Name" />
+              label="Name"
+              onChange={event => setName(event.target.value)} />
 
             <Input
               name="email"
-              label="Email" />
+              label="Email"
+              onChange={event => setEmail(event.target.value)} />
 
             <Input
               name="password"
               label="Password"
-              type="password" />
+              type="password"
+              onChange={event => setPassword(event.target.value)} />
 
             <Input
               name="confirmPassword"
               label="Confirm Password"
-              type="password" />
+              type="password"
+              onChange={event => setConfirmPassword(event.target.value)} />
 
-            <Link
-              to="#"
-              className="btn btn-primary">
-              Save
-            </Link>
+            <footer>
+              <Link
+                to="#"
+                className="btn btn-primary"
+                type="submit"
+                onClick={handleSubmit}>
+                Save
+              </Link>
+            </footer>
           </form>
         </Card>
       </div>
